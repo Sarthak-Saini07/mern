@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>HTML Form Examples</title> 
+    <meta charset="UTF-8">
+</head>
+<body>
+    <center> <h1>College Admission Portal</h1></center>
+    <form method="get" action="response.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fullname" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for ="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10 digit number" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="course">Choose a course:</label>
+            <select id="course" name="course" required>
+                <option value="btech">MERN Stack</option>
+                <option value="bca">DSA</option>
+                <option value="bba">CPP</option>
+                <option value="mba">MBA</option>
+            </select><br><br>
+            <label for = "Skills known">Skills Known:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+            </fieldset>
+        <fieldset>
+            <legend>Address </legend>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your full address"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Document Upload</legend>
+            <label for ="photo">Upload photo</label>
+            <input type ="file" id="photo" name="photo" accept="image/*"><br><br>
+            <label for ="proof">Upload ID Proof</label>
+            <input type ="file" id="proof" name="proof" accept=".pdf,.doc,.docx"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for ="time">Preferred Batch Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend> Declaration</legend>
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I hereby declare that the information provided is correct.</label><br><br>
+            <label for ="submit">Submit Application</label>
+            <input type="submit" id="submit" value="Submit">
+            <label for ="reset">Reset Form</label>
+            <input type="reset" id="reset" value="Reset">
+            </fieldset>
+
+        </fieldset>
+    </form>
+</html>
